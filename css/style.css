@@ -1,0 +1,411 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/*definições de fontes*/
+
+:root{
+    --font-primary: 'lato', 'sans-serif';
+    --font-secundary: 'montserrat', 'sans-serif';
+}
+
+:root{
+    --font-10: 10px;
+    --font-11: 11px;
+    --font-12: 12px;
+    --font-13: 13px;
+    --font-14: 14px;
+    --font-16: 16px;
+    --font-18: 18px;
+    --font-28: 28px;
+}
+
+div#top,
+.link-text,
+.design-share-bottons-pre-text > p,
+article > p,
+.about-editor > p,
+#text-link-about-editor,
+ul,
+footer{
+    font-family: var(--font-primary);
+}
+
+h1,
+h2,
+h3,
+nav{
+    font-family: var(--font-secundary);
+}
+
+/*fallback fonts*/
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+div#top,
+footer{
+    font-size: var(--font-10);
+}
+
+.design-share-bottons-pre-text{
+    font-size: var(--font-11);
+}
+
+span > p,
+p#related-links,
+a#text-link-about-editor,
+.card-other-news > p{
+    font-size: var(--font-12);
+}
+
+.nav-bar{
+    font-size: var(--font-13);
+}
+
+ul{
+    font-size: var(--font-14);
+}
+
+h3,
+article > p,
+a#more-informations.link-text,
+a#reference-news.link-text,
+div.adout-editor > p{
+    font-size: var(--font-16);
+}
+
+h2{
+    font-size: var(--font-18);
+}
+
+h1{
+    font-size: var(--font-28);
+}
+
+/*fim das definições de fontes*/
+
+body{
+    margin: 0px;
+}
+
+.container{
+    width: 606px;
+}
+
+main{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    padding: 0px 140px 0px 140px;
+
+}
+
+#top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4d4d4d;
+    color: white;
+    padding: 0px 139px;
+}
+
+#top > a{
+    text-decoration: none;
+    color: rgb(226, 226, 226);
+}
+
+#top > a:hover{
+    color: white;
+}
+
+#top > p{
+    margin: 14px;
+    color: rgb(226, 226, 226);;
+}
+
+.nav-bar{
+    background-color: #16146F;
+    padding: 22px 139px;
+}
+
+.nav-bar > a{
+    margin-right: 30px;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+
+.nav-bar > a:hover{
+    color: #4c3fff;
+}
+
+span > p{
+    margin: 45px 0px 4px 0px
+}
+.icons-top > img:hover{
+    border-radius: 50%;
+    box-shadow: 1px 4px 7px 2px rgba(255, 255, 255, 0.24);
+}
+
+article > p{
+    text-align: justify;
+}
+
+#more-informations{
+    display: flex;
+    flex-direction: column;
+    height: 42px;
+}
+
+#reference-news{
+    display: flex;
+    flex-direction: column;
+    height: 65px;
+    margin-top: 32px;
+}
+
+.link-pre-text > p{
+    margin: 35px 0px 0px 0px;
+}
+
+.link-text{
+    text-decoration: none;
+    color: #0090d3;
+}
+
+.link-text:visited{
+    color: #0090d3;
+}
+
+.link-text:hover{
+    color:#000;
+}
+
+p#related-links{
+    margin: 10px 0px 57px 0px
+}
+
+#related-links > a{
+    color: #0090d3;
+    text-decoration:none;
+}
+
+#related-links > a:hover{
+    color: #000;
+}
+
+#related-links > a:visited{
+    color: #0090d3;
+}
+
+h1{
+    margin: 4px 0px 28px 0px;
+}
+
+/*botoes*/
+
+#box-bottons-line{
+    margin-bottom: 22px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#share-bottons-pre-text-block{
+    margin-bottom: 23px;
+}
+
+.share-bottons-pre-text > a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.share-bottons-pre-text > a :hover{
+    box-shadow: 1px 2px 6px rgba(117, 117, 117, 0.363);
+}
+
+.design-share-bottons-pre-text{
+    display: flex;
+    flex-direction: row;
+    border-radius: 50px;
+}
+
+.design-share-bottons-pre-text > img{
+    padding: 5px;
+    width: 25px;
+    height: 25px; 
+    border-radius: 50px 0px 0px 50px
+}
+
+.design-share-bottons-pre-text > p{
+    margin: 0px;
+    width: 140px;
+    padding: 5px 5px 5px 0px;
+    border-radius: 0px 50px 50px 0px;
+    color: white;
+    text-align: center;
+    line-height: 24px;
+}
+
+/*Estilo individual de botões*/
+
+#img-face-design-share{
+    background-color: #3B5998;
+}
+
+#p-face-design-share{
+    background-color: #1E73C4;
+}
+
+#img-x-design-share{
+    background-color: #000;
+}
+
+#p-x-design-share{
+    background-color: #141414;
+}
+
+#img-email-design-share{
+    background-color: #869495;
+}
+
+#p-email-design-share{
+    background-color: #95A5A6;
+}
+
+#img-whatsapp-design-share{
+    background-color: #65BC54;
+}
+
+#p-whatsapp-design-share{
+    background-color: rgb(70, 206, 93);
+    width: 566px;
+}
+
+aside{
+    margin-bottom: 36px;
+    height: 270px;
+    padding: 13px 40px 0px 40px;
+    background: #F3F3F3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#editor-picture{
+    border-radius: 50%;
+    margin-top: 19px;
+}
+
+.about-editor{
+    width: 370px;
+}
+
+.about-editor > p{
+    padding-bottom: 20px;
+}
+
+.about-editor > a{
+    padding: 9px;
+    background-color: #1E73BE;
+    color: white;
+    text-decoration: none;
+}
+
+#icon-link-about-editor{
+    padding: 5px 6px 7px 6px;
+    background-color: transparent;
+    border: 1px solid #1E73BE;
+}
+
+#icon-link-about-editor:hover{
+    border: 1px solid #000;
+}
+
+#text-link-about-editor:hover{
+    box-shadow: 1px 2px 6px rgba(117, 117, 117, 0.363);
+}
+
+#other-news{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+}
+
+h2{
+    margin: 15px 0px;
+}
+
+#other-news > div{
+    width: 180px;
+}
+
+.card-other-news > a{
+    text-decoration: none;
+}
+
+.card-other-news > p> a{
+    text-decoration: none;
+}
+
+.title-other-cards{
+    color: black;
+    font-weight: 900;
+}
+
+.title-other-cards:hover{
+    color: #0090d3;
+}
+
+footer{
+    padding: 30px;
+    background-color: #273746;
+    text-align: center;
+}
+
+footer > p{
+    margin: 0px;
+    color: #adadad;
+}
+
+footer > p > strong{
+    font-weight: 900;
+}
+
+.category{
+    margin-top: 43px;
+    height: 480px;
+    color: white;
+    background-color: #34495E;
+    width: 307px;
+}
+
+.category > h3 {
+    padding: 11px 0px 3px 30px;
+
+}
+
+.category > ul{
+    padding-left: 30px;
+}
+
+.category > ul > li > a{
+    color: white;
+    text-decoration: none;
+}
+
+.category > ul > li{
+    margin: 10px 0px;
+    list-style: none;
+}
+
+.category > ul > li:hover{
+    margin: 6px;
+    font-weight: bolder;
+}
+
+.card-other-news > p{
+    margin:6px 0px;
+}
